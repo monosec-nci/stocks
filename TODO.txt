@@ -1,0 +1,13 @@
+Math:
+- Calculating Bollinger Bands
+- Calculating Accumulation/Distribution
+- Calculating RSI
+
+Plotting:
+- Plot Math section
+
+Other:
+- Parsing SEC reports for indicators
+- Compile a list of at least 30 indicators
+--- Machine Learning for finding most influential indicators for each stock
+- Artificial Intelligence to predict stock market in general based on population indicators and politics
