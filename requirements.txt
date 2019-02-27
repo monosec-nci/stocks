@@ -1,0 +1,4 @@
+iexfinance
+numpy
+statistics
+matplotlib
