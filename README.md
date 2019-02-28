@@ -3,6 +3,7 @@ An early attempt at predicting the value of stocks using statistical analysis.
 
 ## Authors
 Myself and [Flare](https://github.com/FlareCoding).
+Intern: [veseyh](https://github.com/veseyh)
 
 ## Tasks
 - [x] Parse stock data
