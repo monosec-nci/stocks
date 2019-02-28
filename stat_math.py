@@ -1,4 +1,10 @@
+__author__ = "nci*, FlareFlax, veseyh"
+__version__ = "0.1"
+__copyright__ = "2019, MonoSec Security Solutions"
+__status__ = "Prototype"
+
 import numpy as np
+import statistics
 
 
 def calc_volatility(prev_data):

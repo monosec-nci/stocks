@@ -1,10 +1,10 @@
-#Author: nci*
-#Co-author: @FlareFlax https://github.com/FlareCoding
+#Author: @nci*
+#Co-author: @FlareFlax https://github.com/FlareCoding and @veseyh https://github.com/veseyh
 #This software is current open sorce and available for anyone
 #For any questions or concerns, feel free to email me or send me a message on discord
 #Contact info:
 #EMAIL : monosec.nci@gmail.com
-#DISCORD : nci*#8948
+#DISCORD : sayonara*#8948
 #PROGRAM:
 #This program uses iexfinance to get financial data for stocks, and utilizes matplotlib to draw visualization data
 #Coding style will remain snake_case in order to give python a slightly more modern feel translated over from my C++ style
@@ -12,7 +12,7 @@
 
 
 
-
+##Imports
 from iexfinance.stocks import Stock
 from iexfinance.stocks import get_historical_data
 from iexfinance.stocks import get_historical_intraday
@@ -27,11 +27,14 @@ import math
 import stat_math
 import stat_plot
 
+
+
 #global declarations
 end = datetime.now()
 start = datetime(end.year, end.month, end.day - 14)
 stock_list = Stock(["TNET","AAPL"])
 stock_data = ["TNET","AAPL"]
+bollinger = []
 
 def get_current_value(list):
     return list.get_price()
@@ -132,12 +135,15 @@ def predict_next_day():
     print()
     print("Predicted Day Medium:")
     predict_day_medium(prev_data,3, "TNET")
+    print()
+    print("Bollinger Data:")
+    stat_plot.find_bollinger_bands(prev_data)
 
 def main():
     """
     Main method: Calls plot_all from stat_plot.py and predict_next_day
     """
-    stat_plot.plot_all()
+    stat_plot.plot_all(bollinger)
     predict_next_day()
 
 
